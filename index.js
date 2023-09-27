@@ -1,9 +1,15 @@
 const express = require('express')
 const app = express()
 const PORT = 3000
+const path = require('path')
+const ejsMate = require('ejs-mate')
+
+app.engine('ejs', ejsMate)
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-  res.send('<h1>Borderland Drones</h1>')
+  res.render('index')
 })
 
 app.get('/missions', (req, res) => {

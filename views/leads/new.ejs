@@ -1,0 +1,41 @@
+<% layout('layouts/boilerplate') %>
+<h1>Add a new job</h1>
+<form action="/leads" method="POST">
+  <div>
+    <label for="contact_name">Contact Name:</label>
+    <input type="text" name="contact_name" id="contact_name" />
+  </div>
+  <div>
+    <label for="location_address_1">Location Address 1:</label>
+    <input type="text" name="location_address_1" id="location_address_1" />
+  </div>
+  <div>
+    <label for="location_address_2">Location Address 2:</label>
+    <input type="text" name="location_address_2" id="location_address_2" />
+  </div>
+  <div>
+    <label for="location_city">Location City:</label>
+    <input type="text" name="location_city" id="location_city" />
+  </div>
+  <div>
+    <label for="location_state">Location State:</label>
+    <input type="text" name="location_state" id="location_state" />
+  </div>
+  <div>
+    <label for="location_zip">Location Zip:</label>
+    <input type="text" name="location_zip" id="location_zip" />
+  </div>
+  <div>
+    <label for="request_summary">Request Summary:</label>
+    <input type="text" name="request_summary" id="request_summary" />
+  </div>
+  <div>
+    <label for="request_details">Request Details:</label>
+    <input type="text" name="request_details" id="request_details" />
+  </div>
+  <div>
+    <label for="lead_status">Lead Status</label>
+    <input type="text" name="lead_status" id="lead_status" />
+  </div>
+  <button>Submit</button>
+</form>
